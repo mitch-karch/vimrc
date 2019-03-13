@@ -3,8 +3,8 @@ set nocompatible                "Use Vim settings, rather than Vi settings
 "Vundle Setup
 "=============================="
 filetype off
-set rtp+=~/vimfiles/bundle/Vundle.vim/
-let path='~/vimfiles/bundle'
+set rtp+=~/.vim/bundle/Vundle.vim/
+let path='~/.vim/bundle'
 call vundle#begin(path)
 
 "Plugins
@@ -15,6 +15,8 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'ervandew/supertab'
+Plugin 'posva/vim-vue'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 filetype plugin indent on
@@ -57,6 +59,8 @@ nnoremap <leader><space> :nohlsearch<cr>
 nnoremap <leader>ev :e $MYVIMRC<cr>
 nnoremap <leader>pi :PluginInstall<cr>
 nnoremap <leader>ne :NERDTree<cr>
+nnoremap <leader>po :source %<cr>
+nnoremap <leader>m :syntax sync fromstart<cr>
 
 
 "Theme Things
@@ -73,3 +77,4 @@ set clipboard=unnamed           "System Clipboard
 "Make vim look more terminal in GVim 
 set go-=m go-=T go-=l go-=L go-=r go-=R go-=b go-=F
 set columns=110
+cd c:/data
